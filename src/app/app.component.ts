@@ -1,33 +1,19 @@
 import { Component, inject, OnInit } from '@angular/core';
 
-import { DialogModule } from 'primeng/dialog';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
 import { PrimeNGConfig } from 'primeng/api';
 import { Aura } from 'primeng/themes/aura';
-import { SelectModule } from 'primeng/select';
+
+import { RouterOutlet } from '@angular/router';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [DialogModule, ButtonModule, InputTextModule, SelectModule ],
+  imports: [RouterOutlet],
 
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template: `<router-outlet></router-outlet>`,
 })
 export class AppComponent implements OnInit {
   title = 'angular-boilerplate-primo';
-  animation: boolean = true;
-
-  animations = [
-    { name: 'Fade', code: 'fade' },
-    { name: 'Slide', code: 'slide' },
-    { name: 'Slide Horizontal', code: 'slide' },
-    { name: 'Slide Vertical', code: 'slide' },
-    { name: 'Scale', code: 'scale' }
-  ]
-
-  dynamicAnimationClasses: string = 'p-dialog p-dialog-visible p-dialog-rtl p-dialog-draggable p-dialog-resizable p-dialog-modal p-dialog-focus-trap';
-
   private PrimeNGConfig = inject(PrimeNGConfig);
 
   ngOnInit() {
@@ -42,14 +28,6 @@ export class AppComponent implements OnInit {
         }
       }
     });
-    this.PrimeNGConfig.ripple.set(true);
-  }
-
-
-
-  visible: boolean = false;
-
-  showDialog() {
-    this.visible = true;
+    this.PrimeNGConfig.ripple.set(false);
   }
 }

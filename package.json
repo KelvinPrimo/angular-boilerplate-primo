@@ -1,6 +1,7 @@
 {
   "name": "angular-boilerplate-primo",
   "version": "0.0.0",
+  "author":  "Kelvin Primo",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

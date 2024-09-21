@@ -13,7 +13,7 @@ The goal is to provide a solid and modern base for starting new Angular projects
 - **Tailwind CSS**;
 
 ## Purpose of the Repository
-The purpose of this repository is to speed up the start of new Angular projects by providing an initial setup that already includes the most commonly used tools and libraries in modern applications. Additionally, we aim to standardize contributions through a predefined Pull Request template, ensuring consistency and quality in collaborative development.
+The purpose of this repository is to speed up the start of new Angular projects by providing an initial setup that already includes tools and libraries. 
 
 ## How to Start
 
@@ -45,12 +45,6 @@ ng serve
 ```
 
 Access `http://localhost:4200/` in your browser to see the running application.
-
-## How to Contribute
-Thank you for your interest in contributing to this project! Please read the `CONTRIBUTING.md` file for details on our code of conduct and the process for submitting Pull Requests.
-
-## Pull Request Template
-To standardize contributions, we use a predefined Pull Request template. Make sure to follow the template when submitting your contributions.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
