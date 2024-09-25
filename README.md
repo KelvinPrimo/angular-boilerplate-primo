@@ -25,12 +25,12 @@ The purpose of this repository is to speed up the start of new Angular projects 
 ### Installation
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/angular18-boilerplate.git
+git clone https://github.com/KelvinPrimo/angular-boilerplate-primo.git
 ```
 
 Navigate to the project directory:
 ```bash
-cd angular18-boilerplate
+cd KelvinPrimo/angular-boilerplate-primo
 ```
 
 Install the dependencies:

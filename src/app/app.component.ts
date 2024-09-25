@@ -28,6 +28,6 @@ export class AppComponent implements OnInit {
         }
       }
     });
-    this.PrimeNGConfig.ripple.set(false);
+    this.PrimeNGConfig.ripple.set(true);
   }
 }
